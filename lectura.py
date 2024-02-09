@@ -1,3 +1,0 @@
-#importamos librerias
-
-print("hola")
