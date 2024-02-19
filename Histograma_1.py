@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pylab as plt
 img_bgr=cv2.imread('drone.jpg')
 img_rgb=cv2.cvtColor(img_bgr,cv2.COLOR_BGR2RGB)
-hist_values=cv2.calcHist([img_bgr], channels=[1], mask=None,histSize=[256],ranges=[0,256]) #Calcula el histograma par la matriz azul 
+hist_values=cv2.calcHist([img_bgr], channels=[1], mask=None,histSize=[256],ranges=[0,256]) #Calcula el histograma par la matriz verde 
 print(hist_values.shape)
 tamaño=(512,512)
 img_resize=cv2.resize(img_bgr,tamaño,interpolation=cv2.INTER_CUBIC)
