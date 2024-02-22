@@ -1,7 +1,7 @@
 import cv2
 
 url='http://192.168.0.56/1600x1200.jpg'
-cap = cv2.VideoCapture('Primer_video.avi')
+cap = cv2.VideoCapture(url)
 
 winName='IP_CAM'
 cv2.namedWindow(winName,cv2.WINDOW_AUTOSIZE)
@@ -10,7 +10,7 @@ alto=int(cap.get(4))
 #(Nombre, codificación, frames por segundo, tamaño)
 out=cv2.VideoWriter("Primer_video_1.avi",cv2.VideoWriter_fourcc('M','J','P','G'),2,(ancho,alto))
 while(1):
-    #cap.open(url)
+    cap.open(url)
     ret,frame=cap.read()
     rgb_1=cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
     hsv_1 = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
