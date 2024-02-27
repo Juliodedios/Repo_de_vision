@@ -43,6 +43,6 @@ countours_b,jerarqui_b=cv2.findContours(bordes_1,cv2.RETR_LIST,cv2.CHAIN_APPROX_
 #print(countours_b)
 cv2.drawContours(imgrgb,countours_b,-1,(0,255,0),3)
 cv2.imshow("Imagen",imgrgb)
-#count_txt = np.savetxt('count.txt', countours_b, delimiter =', ')
+#count_txt = np.savetxt('count.txt', countours_b, delimiter =', '
 despliega_doble(bordes,"Borde sin blur",bordes_1,"Borde blur_1",bordes_2,"Borde blur_2",bordes_3,"Borde sin blur max min")
 cv2.waitKey(0)
