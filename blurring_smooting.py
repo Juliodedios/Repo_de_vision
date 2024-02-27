@@ -35,4 +35,5 @@ blur_median=cv2.medianBlur(imagen,5)#Se usa sobre todo en imagenes con pixeles e
 blur_bilateral=cv2.bilateralFilter(imagen,9,75,75)
 despliega(blur_bilateral)
 
+
 cv2.waitKey(0)
